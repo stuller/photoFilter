@@ -1,0 +1,39 @@
+{
+  "name": "blendmodes",
+  "version": "1.0.0",
+  "description": "\"# photoFilter\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "build": "babel src -d dist"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/dist/**"
+    ],
+    "coverageReporters": ["json", "lcov", "text", "clover"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stuller/photoFilter.git"
+  },
+  "author": "Summer Tuller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stuller/photoFilter/issues"
+  },
+  "homepage": "https://github.com/stuller/photoFilter#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.13.1"
+  }
+}

@@ -1,6 +1,6 @@
 //todo apply multiple filters to one image
 
-const sepia = el => {
+export const sepia = el => {
     //todo check browser support before hiding image
     const image = getAndHideImage(el);
     const canvas = createCanvas(image);

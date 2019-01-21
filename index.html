@@ -29,11 +29,14 @@
 
 
 </div>
-<script src="js/photoFilters.js"></script>
+<script src="dist/js/photoFilters.js"></script>
 <script>
-    sepia('sepia');
-    blackAndWhite('bw');
-    vignette('vignette');
+    window.addEventListener('load', function() {
+        sepia('sepia');
+        blackAndWhite('bw');
+        vignette('vignette');
+    })
+
 </script>
 </body>
 </html>
